@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <title>Personal Portfolio Webpage</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="icon" type="image/png" href="https://goo.gl/sFCKXL" />
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
@@ -10,266 +12,246 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato", sans-serif;
-  }
-  .w3-bar, h1, button {
-    font-family: "Montserrat", sans-serif;
-  }
-  .fa-anchor, .fa-coffee {
-    font-size: 200px;
-  }
-</style>
+<link rel="stylesheet" href="res/css/style.css" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $("#btn-more").click(function() {
-      $("#div-intro").hide(1000);
-      $("#div-info").show(500);
-    });
-    $("#btn-hide").click(function() {
-      $("#div-intro").show(500);
-      $("#div-info").hide(1000);
-    });
-  });
-</script>
+<script src="res/js/script.js"></script>
 
 <body>
-  
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> -->
-      <a href="#header-tag" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT</a>
-      <a href="#div-portfolio" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">PORTFOLIO</a>
-      <a href="#div-contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CONTACT</a>
-    </div>
 
-    <!-- Navbar on small screens -->
-    <div id="nav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-      <a href="#header-tag" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
-      <a href="#div-portfolio" class="w3-bar-item w3-button w3-padding-large">PORTFOLIO</a>
-      <a href="#div-contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-    </div>
+ <!-- Navbar -->
+ <div class="w3-top">
+  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+   <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> -->
+   <a href="#header-tag" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT</a>
+   <a href="#div-portfolio" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">PORTFOLIO</a>
+   <a href="#div-contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CONTACT</a>
   </div>
 
-  <!-- Header -->
-  <header id="header-tag" class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <div id="div-intro">
-      <h1 class="w3-margin w3-jumbo"><a href="https://www.freecodecamp.org/nhut-git" target="_blank">NMD</a></h1>
-      <p class="w3-xlarge">I'm Nhut & I'm a Dev</p>
-      <button id="btn-more" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">More</button>
-    </div>
-    <div id="div-info" style="display: none">
-      <table width="100%">
-        <tr>
-          <td width="20%">
-            <div>
-              <ul class="w3-ul w3-card-2 w3-black w3-hover-indigo" style="width:100%">
-                <li>HTML CSS</li>
-                <li>Bootstrap</li>
-                <li>W3.CSS</li>
-              </ul>
-              <br />
-              <ul class="w3-ul w3-card-2 w3-green w3-hover-indigo" style="width:100%">
-                <li>Json</li>
-                <li>XML</li>
-                <li>SQL</li>
-              </ul>
-              <br />
-              <ul class="w3-ul w3-card-2 w3-light-gray w3-hover-indigo" style="width:100%">
-                <li>Java</li>
-                <li>Javascript</li>
-                <li>Go</li>
-                <li>C</li>
-              </ul>
-            </div>
-          </td>
-          <td with="40%">
-            <div class="w3-card-4" style="margin-top: -220px; margin-left: 50px; width:70%;">
-              <div class="w3-container w3-khaki">
-                <p>I live coding,<br />listen to music and<br />read book in my free time :)!</p>
-              </div>
-            </div>
-          </td>
-          <td width="40%">
-            <div style="margin-left: -50px;">
-              <div class="w3-card-2 w3-pink" style="width:50%">
-                <img src="https://goo.gl/sFCKXL" alt="take photo of a person" height="280px" style="width:100%">
-                <div class="w3-container">
-                  <h4><b>NMD</b></h4>
-                  <p>Top developer of all many developer</p>
-                </div>
-              </div>
-              <br />
-              <div class="w3-border" style="width:50%">
-                <div class="w3-blue" style="height:32px;width:70%"></div>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <button id="btn-hide" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Hide</button>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </header>
-
-  <!-- First Grid -->
-  <div id="div-portfolio" class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-third w3-center">
-      <h1>PORTFOLIO</h1>
-      <i class="fa fa-bookmark" style="font-size:256px;color:red"></i>
-    </div>
-    <table>
-      <tr>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-bird.png" alt="flappy bird" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project C#</p>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-sim.png" alt="sim card" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project Java</p>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-checked.png" alt="checked" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project Java</p>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-app.png" alt="app demo" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project Java</p>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-chat.png" alt="login chat" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project UI</p>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-8-queens.png" alt="8 queens" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project Javascript</p>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-go.png" alt="go" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project Go</p>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="w3-content">
-            <div class="w3-card-4" style="width:50%">
-              <img src="res/img/img-mark.png" alt="mark" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>Project HTML</p>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </table>
+  <!-- Navbar on small screens -->
+  <div id="nav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+   <a href="#header-tag" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+   <a href="#div-portfolio" class="w3-bar-item w3-button w3-padding-large">PORTFOLIO</a>
+   <a href="#div-contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
   </div>
+ </div>
 
-  <!-- Second Grid -->
-  <div id="div-contact" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-third w3-center">
-        <i class="fa fa-address-book w3-padding-64 w3-text-red w3-margin-right" style="font-size:256px;color:red"></i>
+ <!-- Header -->
+ <header id="header-tag" class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <div id="div-intro">
+   <h1 class="w3-margin w3-jumbo"><a href="https://www.freecodecamp.org/nhut-git" target="_blank">NMD</a></h1>
+   <p class="w3-xlarge">I'm Nhut & I'm a Dev</p>
+   <button id="btn-more" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">More</button>
+  </div>
+  <div id="div-info" style="display:none">
+   <table class="table" style="width:100%">
+    <tr>
+     <td style="width:30%">
+      <ul class="w3-ul w3-card-2 w3-black w3-hover-indigo" style="width:100%">
+       <li>HTML CSS</li>
+       <li>Bootstrap</li>
+       <li>W3.CSS</li>
+      </ul>
+      <br />
+      <ul class="w3-ul w3-card-2 w3-green w3-hover-indigo" style="width:100%">
+       <li>Json</li>
+       <li>XML</li>
+       <li>SQL</li>
+      </ul>
+      <br />
+      <ul class="w3-ul w3-card-2 w3-light-gray w3-hover-indigo" style="width:100%">
+       <li>Java</li>
+       <li>Javascript</li>
+       <li>Go</li>
+       <li>C</li>
+      </ul>
+     </td>
+     <td rowspan="2" style="width:30%">
+      <div class="w3-card-2 w3-khaki w3-container" style="width:60%;margin-left:20%">
+       <p>I live coding,</p>
       </div>
-
-      <div class="w3-twothird">
-        <h1>CONTACT ME</h1>
-        <form class="w3-container w3-card-2 w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-          <div class="w3-section">
-            <label>Name</label>
-            <input class="w3-input" style="width:100%;" required="" name="Name" type="text">
-          </div>
-          <div class="w3-section">
-            <label>Email</label>
-            <input class="w3-input" style="width:100%;" required="" name="Email" type="text">
-          </div>
-          <div class="w3-section">
-            <label>Message</label>
-            <input class="w3-input" style="width:100%;" required="" name="Message" type="text">
-          </div>
-          <button type="submit" class="w3-button w3-black w3-right">Send</button>
-        </form>
+      <div class="w3-card-2 w3-khaki w3-container" style="width:60%;margin-left:20%">
+       <p>Listen to music and</p>
       </div>
-    </div>
+      <div class="w3-card-2 w3-khaki w3-container" style="width:60%;margin-left:20%">
+       <p>Read book in my free time :)!</p>
+      </div>
+     </td>
+     <td style="width:40%">
+      <div class="w3-card-2 w3-pink" style="width:60%">
+       <img src="https://goo.gl/sFCKXL" alt="take photo of a person" style="width:100%;heigth:100%">
+       <div class="w3-container">
+        <h4><b>NMD</b></h4>
+        <p>Top developer of all many developer</p>
+        <p><b>[E]</b> nhutminhdoan.com@gmail.com</p>
+       </div>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <button id="btn-hide" class="center-block w3-button w3-black w3-padding-large w3-large w3-margin-top">Hide</button>
+     </td>
+     <td>
+      <br />
+      <div style="width:60%">
+       <div class="w3-pink" style="height:32px;width:70%"></div>
+      </div>
+     </td>
+    </tr>
+   </table>
   </div>
+ </header>
 
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">code by NMD</h1>
-    <div class="w3-xlarge w3-padding-32">
-      <a href="https://github.com/nhut-git" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.facebook.com/minhnhut.doan.79" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    </div>
+ <!-- First Grid -->
+ <div id="div-portfolio" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-third w3-center">
+   <h1>PORTFOLIO</h1>
+   <i class="fa fa-bookmark" style="font-size:256px;color:red"></i>
   </div>
+  <table>
+   <tr>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-bird.png" alt="flappy bird" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project C#</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-sim.png" alt="sim card" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project Java</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-checked.png" alt="checked" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project Java</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-app.png" alt="app demo" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project Java</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-chat.png" alt="login chat" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project UI</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-8-queens.png" alt="8 queens" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project Javascript</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-go.png" alt="go" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project Go</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+    <td>
+     <div class="w3-content">
+      <div class="w3-card-4" style="width:50%">
+       <img src="res/img/img-mark.png" alt="mark" style="width:100%">
+       <div class="w3-container w3-center">
+        <p>Project HTML</p>
+       </div>
+      </div>
+     </div>
+     <br />
+    </td>
+   </tr>
+  </table>
+ </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    <p>&copy 2017</p>
-  </footer>
+ <!-- Second Grid -->
+ <div id="div-contact" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+   <div class="w3-third w3-center">
+    <i class="fa fa-address-book w3-padding-64 w3-text-red w3-margin-right" style="font-size:256px;color:red"></i>
+   </div>
 
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("nav");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-  </script>
+   <div class="w3-twothird">
+    <h1>CONTACT ME</h1>
+    <form class="w3-container w3-card-2 w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+     <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input" style="width:100%;" required="" name="Name" type="text">
+     </div>
+     <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input" style="width:100%;" required="" name="Email" type="text">
+     </div>
+     <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input" style="width:100%;" required="" name="Message" type="text">
+     </div>
+     <button type="submit" class="w3-button w3-black w3-right">Send</button>
+    </form>
+   </div>
+  </div>
+ </div>
+
+ <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+  <h1 class="w3-margin w3-xlarge">code by NMD</h1>
+  <div class="w3-xlarge w3-padding-32">
+   <a href="https://github.com/nhut-git" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+   <a href="https://www.facebook.com/minhnhut.doan.79" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  </div>
+ </div>
+
+ <!-- Footer -->
+ <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>&copy 2017</p>
+ </footer>
 
 </body>
 
